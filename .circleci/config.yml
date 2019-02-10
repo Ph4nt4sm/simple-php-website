@@ -38,3 +38,9 @@ workflows:
       - two:
           requires:
             - one
+  two_two:
+    jobs:
+      - one
+      - two:
+          requires:
+            - one
